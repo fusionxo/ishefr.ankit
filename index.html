@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multilingual Fun Site</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Toast Container -->
+  <div class="toast-container"></div>
+
+  <!-- Language Selection Modal -->
+  <div id="languageModal" class="modal animate-fade">
+    <div class="modal-content animate-scale">
+      <h2>Select Your Language</h2>
+      <div class="select-wrapper">
+        <select id="languageSelect">
+          <option value="">-- Choose Language --</option>
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+        </select>
+      </div>
+      <button id="langConfirmBtn">Let's Go!</button>
+    </div>
+  </div>
+
+  <!-- Welcome Section -->
+  <div id="welcome" class="section hidden">
+    <h1 id="welcomeText" class="animate-up"></h1>
+    <audio id="welcomeAudio" preload="auto"></audio>
+    <div id="welcomeImages" class="animate-up"></div>
+  </div>
+
+  <div id="about" class="section hidden">
+    <h1>About Me</h1>
+    
+    <!-- Discord-like message container -->
+    <div class="discord-message animate-scale">
+      <div class="message-header">
+        <img src="https://media.discordapp.net/attachments/1238078018585366528/1365999158703554651/42y.jpg?ex=680f595a&is=680e07da&hm=5efb320dc360efeb894dab645674962aacadfc14d1aa7478882ab64b0012b257&=&format=webp&width=662&height=662" alt="Kami" class="avatar">
+        <div class="user-info">
+          <span class="username">n0t kami~</span>
+          <span class="timestamp"></span>
+        </div>
+      </div>
+      <div class="message-content">
+        Hello! My name is Ankit, but I'm also known as Kami. I'm a 17-year-old student from Jharkhand, India, currently in the 12th standard. My hobbies might seem a bit unusual - they include going to the gym, cooking, reading manhwas/manhuas, and analyzing trades. One thing that defines me is my love-hate relationship with gaming. It's what I enjoy the most, and yet, it's also what I find most challenging xD.
+      </div>
+    </div>
+    
+    <div class="buttons">
+      <button id="musicRecBtn" class="button animate-pulse">
+        <i class="fas fa-music"></i> Music Recommendations
+      </button>
+      <button id="qnaBtn" class="button accent">
+        <i class="fas fa-comment-dots"></i> Ask Me Anything
+      </button>
+    </div>
+  
+    <!-- Music List Section -->
+    <div id="musicListSection" class="hidden animate-scale"></div>
+  
+    <!-- Q&A List -->
+    <div id="qnaList" class="hidden animate-scale"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
